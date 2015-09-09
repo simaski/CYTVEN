@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_opcion1">
+        <item>Excelente</item>
+        <item>Muy bueno</item>
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>Deficiente</item>
+    </string-array>
+
+    <string-array name="arr_opcion2">
+        <item>Excelente</item>
+        <item>Muy bueno</item>
+        <item>Bueno</item>
+        <item>Elemental</item>
+        <item>Deficiente</item>
+    </string-array>
+
+    <string-array name="arr_opcion3">
+        <item>Excelente</item>
+        <item>Muy buena</item>
+        <item>Buena</item>
+        <item>Regular</item>
+        <item>Deficiente</item>
+    </string-array>
+
+    <string-array name="arr_opcion4">
+        <item>Sumamente interesante</item>
+        <item>Muy interesante</item>
+        <item>Interesante</item>
+        <item>Poco interesante</item>
+        <item>Nada interesante</item>
+    </string-array>
+
+    <string-array name="arr_opcion5">
+        <item>Muy buena</item>
+        <item>Buena</item>
+        <item>Regular</item>
+        <item>Poca</item>
+        <item>Ninguna</item>
+    </string-array>
+
+    <string-array name="arr_opcion6">
+        <item>Suficiente</item>
+        <item>Exacta</item>
+        <item>Adecuada</item>
+        <item>Insuficiente</item>
+        <item>Excesiva</item>
+    </string-array>
+
+    <string-array name="arr_opcion7">
+        <item>Sobresaliente</item>
+        <item>Muy bueno</item>
+        <item>Bueno</item>
+        <item>Elemental</item>
+        <item>Deficiente</item>
+    </string-array>
+
+</resources>

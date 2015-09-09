@@ -2,4 +2,15 @@
 <resources>
     <color name="PrimaryColor">#2196F3</color>
     <color name="PrimaryDarkColor">#1976D2</color>
+
+    <array name="texts_black">
+        <item>@color/md_text</item>
+        <item>@color/md_secondary_text_icons</item>
+        <item>@color/md_disabled_hint_text</item>
+        <item>@color/md_divider</item>
+    </array>
+    <color name="md_text">#df000000</color>
+    <color name="md_secondary_text_icons">#8a000000</color>
+    <color name="md_disabled_hint_text">#4c000000</color>
+    <color name="md_divider">#1f000000</color>
 </resources>

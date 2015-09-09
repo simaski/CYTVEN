@@ -1,14 +1,14 @@
 <resources>
-    <string name="app_name">Navigation View</string>
+    <string name="app_name">CYTVEN</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="navigation_item_1">Home</string>
     <string name="navigation_item_2">Events</string>
-    <string name="starred_string">Starred</string>
-    <string name="inbox_string">Inbox</string>
-    <string name="sent_mail_string">Sent mail</string>
-    <string name="draft_string">Drafts</string>
+    <string name="verdatos_string">Ver Datos</string>
+    <string name="encuesta_string">Encuesta</string>
+    <string name="contactos_string">Contactos</string>
+    <string name="acerca_string">Acerca de</string>
     <string name="subheader">Subheader</string>
     <string name="trash_string">Trash</string>
     <string name="all_mail_string">All mails</string>
@@ -16,5 +16,19 @@
     <string name="closeDrawer">Navigation View</string>
     <string name="openDrawer">Navigation View Closed</string>
 
-    <string name="pregunta1">El ambiente y condiciones físicas del local, le pareció:</string>
+    <string name="pregunta1">1. El ambiente y condiciones físicas del local, le pareció:</string>
+    <string name="pregunta2">2.	Los objetivos del encuentro Regional de Ciencia y Tecnología se cumplieron  de  forma:</string>
+    <string name="pregunta3">3.	El material de apoyo utilizado para el desarrollo de la actividad fue:</string>
+    <string name="pregunta4">4.	El nivel técnico de la actividad resultó:</string>
+    <string name="pregunta5">5.	Como considera el dominio del tema por el facilitador, ponente, expositor, ect. fue:</string>
+    <string name="pregunta6">6.	La didáctica utilizada por el  facilitador en la actividad fue:</string>
+    <string name="pregunta7">7.	La habilidad para comunicarse y estimular la participación fue:</string>
+    <string name="pregunta8">8.	El contenido del tema fue:</string>
+    <string name="pregunta9">9.	La utilidad de la actividad para su trabajo lo considera:</string>
+    <string name="pregunta10">10.	La duración de la actividad le pareció:</string>
+    <string name="pregunta11">11.	Como considera usted el servicio de refrigerio:</string>
+    <string name="pregunta12">12.	En líneas generales, como califica la actividad:</string>
+    <string name="sugerencias">Sugerencias</string>
+    <string name="st_btEnviar">Enviar</string>
+    <string name="st_btVer">Ver</string>
 </resources>
