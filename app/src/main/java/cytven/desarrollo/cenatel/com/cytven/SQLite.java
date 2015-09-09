@@ -69,7 +69,7 @@ public class SQLite {
             contentValues.put(sqliteHelper.Pregunta9,st_spi_pregunta9R);
             contentValues.put(sqliteHelper.Pregunta10,st_spi_pregunta10R);
             contentValues.put(sqliteHelper.Pregunta11,st_spi_pregunta11R);
-            contentValues.put(sqliteHelper.Pregunta12,st_spi_pregunta11R);
+            contentValues.put(sqliteHelper.Pregunta12,st_spi_pregunta12R);
             contentValues.put(sqliteHelper.Sugerencia,sugerencia);
             Log.i("SQLite", "Nuevo registro ");
             return ( db.insert( sqliteHelper.N_TABLA , null, contentValues ) != -1 )?true:false;
