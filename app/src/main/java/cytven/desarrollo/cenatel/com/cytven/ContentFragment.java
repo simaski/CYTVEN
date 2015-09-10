@@ -355,19 +355,19 @@ public class ContentFragment extends Fragment {
             }*/
 
             ArrayList<NameValuePair> postValores = new ArrayList<NameValuePair>();
-            postValores.add(new BasicNameValuePair("Pregunta1", st_spi_pregunta1R));
-            postValores.add(new BasicNameValuePair("Pregunta2", st_spi_pregunta2R));
-            postValores.add(new BasicNameValuePair("Pregunta3", st_spi_pregunta3R));
-            postValores.add(new BasicNameValuePair("Pregunta4", st_spi_pregunta4R));
-            postValores.add(new BasicNameValuePair("Pregunta5", st_spi_pregunta5R));
-            postValores.add(new BasicNameValuePair("Pregunta6", st_spi_pregunta6R));
-            postValores.add(new BasicNameValuePair("Pregunta7", st_spi_pregunta7R));
-            postValores.add(new BasicNameValuePair("Pregunta8", st_spi_pregunta8R));
-            postValores.add(new BasicNameValuePair("Pregunta9", st_spi_pregunta9R));
-            postValores.add(new BasicNameValuePair("Pregunta10", st_spi_pregunta10R));
-            postValores.add(new BasicNameValuePair("Pregunta11", st_spi_pregunta11R));
-            postValores.add(new BasicNameValuePair("Pregunta12", st_spi_pregunta12R));
-            postValores.add(new BasicNameValuePair("Sugerencia", st_et_sugerencia));
+            postValores.add(new BasicNameValuePair("pregunta1", st_spi_pregunta1R));
+            postValores.add(new BasicNameValuePair("pregunta2", st_spi_pregunta2R));
+            postValores.add(new BasicNameValuePair("pregunta3", st_spi_pregunta3R));
+            postValores.add(new BasicNameValuePair("pregunta4", st_spi_pregunta4R));
+            postValores.add(new BasicNameValuePair("pregunta5", st_spi_pregunta5R));
+            postValores.add(new BasicNameValuePair("pregunta6", st_spi_pregunta6R));
+            postValores.add(new BasicNameValuePair("pregunta7", st_spi_pregunta7R));
+            postValores.add(new BasicNameValuePair("pregunta8", st_spi_pregunta8R));
+            postValores.add(new BasicNameValuePair("pregunta9", st_spi_pregunta9R));
+            postValores.add(new BasicNameValuePair("pregunta10", st_spi_pregunta10R));
+            postValores.add(new BasicNameValuePair("pregunta11", st_spi_pregunta11R));
+            postValores.add(new BasicNameValuePair("pregunta12", st_spi_pregunta12R));
+            postValores.add(new BasicNameValuePair("sugerencias", st_et_sugerencia));
 
 
             String respuesta = null;

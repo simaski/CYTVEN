@@ -58,18 +58,18 @@ public class SQLite {
         if( st_spi_pregunta1R.length()> 0 )
         {
             ContentValues contentValues = new ContentValues();
-            contentValues.put(sqliteHelper.Pregunta1,st_spi_pregunta1R);
-            contentValues.put(sqliteHelper.Pregunta2,st_spi_pregunta2R);
-            contentValues.put(sqliteHelper.Pregunta3,st_spi_pregunta3R);
-            contentValues.put(sqliteHelper.Pregunta4,st_spi_pregunta4R);
-            contentValues.put(sqliteHelper.Pregunta5,st_spi_pregunta5R);
-            contentValues.put(sqliteHelper.Pregunta6,st_spi_pregunta6R);
-            contentValues.put(sqliteHelper.Pregunta7,st_spi_pregunta7R);
-            contentValues.put(sqliteHelper.Pregunta8,st_spi_pregunta8R);
-            contentValues.put(sqliteHelper.Pregunta9,st_spi_pregunta9R);
-            contentValues.put(sqliteHelper.Pregunta10,st_spi_pregunta10R);
-            contentValues.put(sqliteHelper.Pregunta11,st_spi_pregunta11R);
-            contentValues.put(sqliteHelper.Pregunta12,st_spi_pregunta12R);
+            contentValues.put(sqliteHelper.pregunta1,st_spi_pregunta1R);
+            contentValues.put(sqliteHelper.pregunta2,st_spi_pregunta2R);
+            contentValues.put(sqliteHelper.pregunta3,st_spi_pregunta3R);
+            contentValues.put(sqliteHelper.pregunta4,st_spi_pregunta4R);
+            contentValues.put(sqliteHelper.pregunta5,st_spi_pregunta5R);
+            contentValues.put(sqliteHelper.pregunta6,st_spi_pregunta6R);
+            contentValues.put(sqliteHelper.pregunta7,st_spi_pregunta7R);
+            contentValues.put(sqliteHelper.pregunta8,st_spi_pregunta8R);
+            contentValues.put(sqliteHelper.pregunta9,st_spi_pregunta9R);
+            contentValues.put(sqliteHelper.pregunta10,st_spi_pregunta10R);
+            contentValues.put(sqliteHelper.pregunta11,st_spi_pregunta11R);
+            contentValues.put(sqliteHelper.pregunta12,st_spi_pregunta12R);
             contentValues.put(sqliteHelper.Sugerencia,sugerencia);
             Log.i("SQLite", "Nuevo registro ");
             return ( db.insert( sqliteHelper.N_TABLA , null, contentValues ) != -1 )?true:false;
@@ -123,18 +123,18 @@ public class SQLite {
         return db.query( sqliteHelper.N_TABLA ,
                 new String[]{
                         sqliteHelper.ID_FILA ,
-                        sqliteHelper.Pregunta1,
-                        sqliteHelper.Pregunta2,
-                        sqliteHelper.Pregunta3,
-                        sqliteHelper.Pregunta4,
-                        sqliteHelper.Pregunta5,
-                        sqliteHelper.Pregunta6,
-                        sqliteHelper.Pregunta7,
-                        sqliteHelper.Pregunta8,
-                        sqliteHelper.Pregunta9,
-                        sqliteHelper.Pregunta10,
-                        sqliteHelper.Pregunta11,
-                        sqliteHelper.Pregunta12,
+                        sqliteHelper.pregunta1,
+                        sqliteHelper.pregunta2,
+                        sqliteHelper.pregunta3,
+                        sqliteHelper.pregunta4,
+                        sqliteHelper.pregunta5,
+                        sqliteHelper.pregunta6,
+                        sqliteHelper.pregunta7,
+                        sqliteHelper.pregunta8,
+                        sqliteHelper.pregunta9,
+                        sqliteHelper.pregunta10,
+                        sqliteHelper.pregunta11,
+                        sqliteHelper.pregunta12,
                         sqliteHelper.Sugerencia
                 },
                 null, null, null, null, null);
@@ -149,18 +149,18 @@ public class SQLite {
         return db.query( sqliteHelper.N_TABLA ,
                 new String[]{
                         sqliteHelper.ID_FILA ,
-                        sqliteHelper.Pregunta1,
-                        sqliteHelper.Pregunta2,
-                        sqliteHelper.Pregunta3,
-                        sqliteHelper.Pregunta4,
-                        sqliteHelper.Pregunta5,
-                        sqliteHelper.Pregunta6,
-                        sqliteHelper.Pregunta7,
-                        sqliteHelper.Pregunta8,
-                        sqliteHelper.Pregunta9,
-                        sqliteHelper.Pregunta10,
-                        sqliteHelper.Pregunta11,
-                        sqliteHelper.Pregunta12,
+                        sqliteHelper.pregunta1,
+                        sqliteHelper.pregunta2,
+                        sqliteHelper.pregunta3,
+                        sqliteHelper.pregunta4,
+                        sqliteHelper.pregunta5,
+                        sqliteHelper.pregunta6,
+                        sqliteHelper.pregunta7,
+                        sqliteHelper.pregunta8,
+                        sqliteHelper.pregunta9,
+                        sqliteHelper.pregunta10,
+                        sqliteHelper.pregunta11,
+                        sqliteHelper.pregunta12,
                         sqliteHelper.Sugerencia
                 },
                 sqliteHelper.ID_FILA + " = " + id ,
