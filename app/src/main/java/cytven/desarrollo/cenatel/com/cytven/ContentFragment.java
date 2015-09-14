@@ -3,6 +3,7 @@ package cytven.desarrollo.cenatel.com.cytven;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -16,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.apache.http.HttpResponse;
@@ -72,12 +74,75 @@ public class ContentFragment extends Fragment {
     //*******************SQlite**********************//
     private SQLite sqlite;
 
+    //*******************TextView*******************//
+    public static TextView tv_pregunta1;
+    public static TextView tv_pregunta2;
+    public static TextView tv_pregunta3;
+    public static TextView tv_pregunta4;
+    public static TextView tv_pregunta5;
+    public static TextView tv_pregunta6;
+    public static TextView tv_pregunta7;
+    public static TextView tv_pregunta8;
+    public static TextView tv_pregunta9;
+    public static TextView tv_pregunta10;
+    public static TextView tv_pregunta11;
+    public static TextView tv_pregunta12;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.content_fragment, container, false);
 
+        tv_pregunta1 = (TextView)v.findViewById(R.id.tv_pregunta1);
+        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "comic.ttf");
+        tv_pregunta1.setTypeface(font);
+
+        tv_pregunta2 = (TextView)v.findViewById(R.id.tv_pregunta2);
+        Typeface font2 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta2.setTypeface(font2);
+
+        tv_pregunta3 = (TextView)v.findViewById(R.id.tv_pregunta3);
+        Typeface font3 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta3.setTypeface(font3);
+
+        tv_pregunta4 = (TextView)v.findViewById(R.id.tv_pregunta4);
+        Typeface font4 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta4.setTypeface(font4);
+
+        tv_pregunta5 = (TextView)v.findViewById(R.id.tv_pregunta5);
+        Typeface font5 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta5.setTypeface(font5);
+
+        tv_pregunta6 = (TextView)v.findViewById(R.id.tv_pregunta6);
+        Typeface font6 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta6.setTypeface(font6);
+
+        tv_pregunta7 = (TextView)v.findViewById(R.id.tv_pregunta7);
+        Typeface font7 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta7.setTypeface(font7);
+
+        tv_pregunta8 = (TextView)v.findViewById(R.id.tv_pregunta8);
+        Typeface font8 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta8.setTypeface(font8);
+
+        tv_pregunta9 = (TextView)v.findViewById(R.id.tv_pregunta9);
+        Typeface font9 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta9.setTypeface(font9);
+
+        tv_pregunta10 = (TextView)v.findViewById(R.id.tv_pregunta10);
+        Typeface font10 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta10.setTypeface(font10);
+
+        tv_pregunta11 = (TextView)v.findViewById(R.id.tv_pregunta11);
+        Typeface font11 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta11.setTypeface(font11);
+
+        tv_pregunta12 = (TextView)v.findViewById(R.id.tv_pregunta12);
+        Typeface font12 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
+        tv_pregunta12.setTypeface(font12);
+
         et_sugerencia = (EditText) v.findViewById(R.id.et_sugerencias);
+        //et_sugerencia.setError("Campo obligatorio");
 
         spi_pregunta1 = (Spinner) v.findViewById(R.id.spi_pregunta1);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(), R.array.arr_opcion1, android.R.layout.simple_spinner_item);
@@ -284,7 +349,7 @@ public class ContentFragment extends Fragment {
                     et_nombreParticpanteR = et_nombreParticipante.getText().toString();
                     et_observacionR = et_observacion.getText().toString();*/
 
-                st_et_sugerencia = et_sugerencia.getText().toString();
+               st_et_sugerencia = et_sugerencia.getText().toString();
 
                     new MyAsyncTask(getActivity()).execute();
 

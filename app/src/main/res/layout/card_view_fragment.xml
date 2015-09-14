@@ -14,7 +14,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard1"
                 android:layout_width="match_parent"
@@ -36,19 +37,15 @@
                         android:id="@+id/tv_pregunta1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
+                        android:textSize="21sp"
                         android:text="@string/pregunta1"
-                        android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textColor="@color/md_text"/>
 
                     <Spinner
                         android:id="@+id/spi_pregunta1"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
-                        android:prompt="@string/pregunta1"
-                        android:layout_below="@+id/tv_pregunta1" />
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_pregunta1"/>
 
                 </LinearLayout>
 
@@ -75,13 +72,14 @@
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard2"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard1"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard1"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -97,17 +95,15 @@
                         android:id="@+id/tv_pregunta2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:text="@string/pregunta2"
                         android:textColor="@color/md_text"
-                        android:textSize="18sp" />
+                        android:textSize="21sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta2"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
-                        android:layout_below="@+id/tv_pregunta2"/>
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_pregunta2" />
 
                 </LinearLayout>
 
@@ -134,13 +130,14 @@
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard3"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard2"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard2"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -157,7 +154,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/placeCard2"
-                        android:layout_marginLeft="5dp"
                         android:text="@string/pregunta3"
                         android:textColor="@color/md_text"
                         android:textSize="21sp" />
@@ -165,8 +161,7 @@
                     <Spinner
                         android:id="@+id/spi_pregunta3"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_pregunta3" />
 
                 </LinearLayout>
@@ -194,13 +189,14 @@
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard4"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard3"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard3"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -216,7 +212,6 @@
                         android:id="@+id/tv_pregunta4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:layout_below="@+id/spi_pregunta3"
                         android:text="@string/pregunta4"
                         android:textColor="@color/md_text"
@@ -225,8 +220,7 @@
                     <Spinner
                         android:id="@+id/spi_pregunta4"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_pregunta4" />
 
                 </LinearLayout>
@@ -254,13 +248,14 @@
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard5"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard4"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard4"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -276,7 +271,6 @@
                         android:id="@+id/tv_pregunta5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:text="@string/pregunta5"
                         android:textColor="@color/md_text"
                         android:textSize="21sp" />
@@ -284,8 +278,7 @@
                     <Spinner
                         android:id="@+id/spi_pregunta5"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_pregunta5" />
 
                 </LinearLayout>
@@ -313,13 +306,14 @@
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard6"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard5"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard5"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -335,7 +329,6 @@
                         android:id="@+id/tv_pregunta6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:layout_below="@+id/spi_pregunta5"
                         android:text="@string/pregunta6"
                         android:textColor="@color/md_text"
@@ -344,8 +337,7 @@
                     <Spinner
                         android:id="@+id/spi_pregunta6"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_pregunta6" />
 
                 </LinearLayout>
@@ -373,13 +365,14 @@
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard7"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard6"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard6"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -395,7 +388,6 @@
                         android:id="@+id/tv_pregunta7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:layout_below="@+id/placeCard6"
                         android:text="@string/pregunta7"
                         android:textColor="@color/md_text"
@@ -404,8 +396,7 @@
                     <Spinner
                         android:id="@+id/spi_pregunta7"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_pregunta7" />
 
                 </LinearLayout>
@@ -434,13 +425,14 @@
             </android.support.v7.widget.CardView>
 
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard8"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard7"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard7"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -456,7 +448,6 @@
                         android:id="@+id/tv_pregunta8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:layout_below="@+id/spi_pregunta7"
                         android:text="@string/pregunta8"
                         android:textColor="@color/md_text"
@@ -465,8 +456,7 @@
                     <Spinner
                         android:id="@+id/spi_pregunta8"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_pregunta8" />
 
                 </LinearLayout>
@@ -494,13 +484,14 @@
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard9"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard8"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard8"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -516,7 +507,6 @@
                         android:id="@+id/tv_pregunta9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:layout_below="@+id/spi_pregunta8"
                         android:text="@string/pregunta9"
                         android:textColor="@color/md_text"
@@ -525,8 +515,7 @@
                     <Spinner
                         android:id="@+id/spi_pregunta9"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_pregunta9" />
 
                 </LinearLayout>
@@ -555,13 +544,14 @@
             </android.support.v7.widget.CardView>
 
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard10"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard9"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard9"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -577,7 +567,6 @@
                         android:id="@+id/tv_pregunta10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:layout_below="@+id/spi_pregunta9"
                         android:text="@string/pregunta10"
                         android:textColor="@color/md_text"
@@ -586,8 +575,7 @@
                     <Spinner
                         android:id="@+id/spi_pregunta10"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_pregunta10" />
 
                 </LinearLayout>
@@ -615,13 +603,14 @@
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard11"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard10"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard10"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -637,7 +626,6 @@
                         android:id="@+id/tv_pregunta11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:layout_below="@+id/spi_pregunta10"
                         android:text="@string/pregunta11"
                         android:textColor="@color/md_text"
@@ -646,8 +634,7 @@
                     <Spinner
                         android:id="@+id/spi_pregunta11"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_pregunta11" />
 
                 </LinearLayout>
@@ -675,13 +662,14 @@
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard12"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard11"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard11"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -697,7 +685,6 @@
                         android:id="@+id/tv_pregunta12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:layout_below="@+id/spi_pregunta11"
                         android:text="@string/pregunta12"
                         android:textColor="@color/md_text"
@@ -706,8 +693,7 @@
                     <Spinner
                         android:id="@+id/spi_pregunta12"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_pregunta12" />
 
                 </LinearLayout>
@@ -736,13 +722,14 @@
             </android.support.v7.widget.CardView>
 
 
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/placeCard13"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_below="@+id/placeCard12"
                 android:layout_margin="8dp"
+                android:layout_below="@+id/placeCard12"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/card_elevation">
 
@@ -752,8 +739,8 @@
                     android:id="@+id/mainHolder13"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:paddingTop="10dp">
+                    android:paddingTop="10dp"
+                    android:orientation="vertical">
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/textInputuno"
@@ -764,7 +751,6 @@
                             android:id="@+id/et_sugerencias"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:elevation="100dp"
                             android:hint="@string/sugerencias" />
                     </android.support.design.widget.TextInputLayout>
 
@@ -792,6 +778,7 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
 
 
             <LinearLayout

@@ -5,17 +5,6 @@
     android:orientation="vertical"
     android:background="@android:color/white">
 
-
-    <TextView
-        android:id="@+id/splash_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:gravity="center"
-        android:textSize="27sp"
-        android:layout_marginTop="80dp"
-        android:layout_gravity="center"/>
-
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="330dp"
