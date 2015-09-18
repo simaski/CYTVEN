@@ -1,22 +1,29 @@
 package cytven.desarrollo.cenatel.com.cytven;
 
+import android.app.Dialog;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TabWidget;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -63,6 +70,7 @@ public class ContentFragment extends Fragment {
     public static String st_spi_pregunta11R;
     public static String st_spi_pregunta12R;
     public static String st_et_sugerencia;
+    public static String PREFS_NAME = "MyPrefsFile1";
 
     //********************Button*********************//
     public static Button bt_Enviar;
@@ -87,59 +95,110 @@ public class ContentFragment extends Fragment {
     public static TextView tv_pregunta10;
     public static TextView tv_pregunta11;
     public static TextView tv_pregunta12;
+    public static TextView tv_placename1;
+    public static TextView tv_placename2;
+    public static TextView tv_placename3;
+    public static TextView tv_placename4;
+    public static TextView tv_placename5;
+    public static TextView tv_placename6;
+    public static TextView tv_placename7;
+    public static TextView tv_placename8;
+    public static TextView tv_placename9;
+    public static TextView tv_placename10;
+    public static TextView tv_placename11;
+    public static TextView tv_placename12;
+    public static TextView tv_placename13;
+
+    //*******************CheckBox*******************//
+    public CheckBox dontShowAgain;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.content_fragment, container, false);
+        ((MainActivity) getActivity()).setVariable(0);
+
+        DialogoPersonalizado();
 
         tv_pregunta1 = (TextView)v.findViewById(R.id.tv_pregunta1);
-        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "comic.ttf");
+        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "centurygb.ttf");
         tv_pregunta1.setTypeface(font);
 
         tv_pregunta2 = (TextView)v.findViewById(R.id.tv_pregunta2);
-        Typeface font2 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta2.setTypeface(font2);
+        tv_pregunta2.setTypeface(font);
 
         tv_pregunta3 = (TextView)v.findViewById(R.id.tv_pregunta3);
-        Typeface font3 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta3.setTypeface(font3);
+        tv_pregunta3.setTypeface(font);
 
         tv_pregunta4 = (TextView)v.findViewById(R.id.tv_pregunta4);
-        Typeface font4 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta4.setTypeface(font4);
+        tv_pregunta4.setTypeface(font);
 
         tv_pregunta5 = (TextView)v.findViewById(R.id.tv_pregunta5);
-        Typeface font5 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta5.setTypeface(font5);
+        tv_pregunta5.setTypeface(font);
 
         tv_pregunta6 = (TextView)v.findViewById(R.id.tv_pregunta6);
-        Typeface font6 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta6.setTypeface(font6);
+        tv_pregunta6.setTypeface(font);
 
         tv_pregunta7 = (TextView)v.findViewById(R.id.tv_pregunta7);
-        Typeface font7 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta7.setTypeface(font7);
+        tv_pregunta7.setTypeface(font);
 
         tv_pregunta8 = (TextView)v.findViewById(R.id.tv_pregunta8);
-        Typeface font8 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta8.setTypeface(font8);
+        tv_pregunta8.setTypeface(font);
 
         tv_pregunta9 = (TextView)v.findViewById(R.id.tv_pregunta9);
-        Typeface font9 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta9.setTypeface(font9);
+        tv_pregunta9.setTypeface(font);
 
         tv_pregunta10 = (TextView)v.findViewById(R.id.tv_pregunta10);
-        Typeface font10 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta10.setTypeface(font10);
+        tv_pregunta10.setTypeface(font);
 
         tv_pregunta11 = (TextView)v.findViewById(R.id.tv_pregunta11);
-        Typeface font11 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta11.setTypeface(font11);
+        tv_pregunta11.setTypeface(font);
 
         tv_pregunta12 = (TextView)v.findViewById(R.id.tv_pregunta12);
-        Typeface font12 = Typeface.createFromAsset(getActivity().getAssets(),"comic.ttf");
-        tv_pregunta12.setTypeface(font12);
+        tv_pregunta12.setTypeface(font);
+
+        tv_placename1 = (TextView)v.findViewById(R.id.placeName1);
+        Typeface font1 = Typeface.createFromAsset(getActivity().getAssets(), "centurygi.ttf");
+        tv_placename1.setTypeface(font1);
+
+        tv_placename2 = (TextView)v.findViewById(R.id.placeName2);
+        tv_placename2.setTypeface(font1);
+
+        tv_placename3 = (TextView)v.findViewById(R.id.placeName3);
+        tv_placename3.setTypeface(font1);
+
+        tv_placename4 = (TextView)v.findViewById(R.id.placeName4);
+        tv_placename4.setTypeface(font1);
+
+        tv_placename5 = (TextView)v.findViewById(R.id.placeName5);
+        tv_placename5.setTypeface(font1);
+
+        tv_placename6 = (TextView)v.findViewById(R.id.placeName6);
+        tv_placename6.setTypeface(font1);
+
+        tv_placename7 = (TextView)v.findViewById(R.id.placeName7);
+        tv_placename7.setTypeface(font1);
+
+        tv_placename8 = (TextView)v.findViewById(R.id.placeName8);
+        tv_placename8.setTypeface(font1);
+
+        tv_placename9 = (TextView)v.findViewById(R.id.placeName9);
+        tv_placename9.setTypeface(font1);
+
+        tv_placename10 = (TextView)v.findViewById(R.id.placeName10);
+        tv_placename10.setTypeface(font1);
+
+        tv_placename11 = (TextView)v.findViewById(R.id.placeName11);
+        tv_placename11.setTypeface(font1);
+
+        tv_placename12 = (TextView)v.findViewById(R.id.placeName12);
+        tv_placename12.setTypeface(font1);
+
+        tv_placename13 = (TextView)v.findViewById(R.id.placeName13);
+        tv_placename13.setTypeface(font1);
+
+
+
 
         et_sugerencia = (EditText) v.findViewById(R.id.et_sugerencias);
         //et_sugerencia.setError("Campo obligatorio");
@@ -489,5 +548,49 @@ public class ContentFragment extends Fragment {
         }
 
     }
+
+
+    //**************************************DIALOGO PERSONALIZADO***************************************
+    public void DialogoPersonalizado(){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+        LayoutInflater adbInflater = LayoutInflater.from(getActivity());
+        View eulalayout = adbInflater.inflate(R.layout.checkbox, null);
+        dontShowAgain = (CheckBox) eulalayout.findViewById(R.id.skip);
+        alertDialog.setView(eulalayout);
+
+        // Setting Dialog Title
+        alertDialog.setTitle("Atencion!!!");
+        // Setting Dialog Message
+        alertDialog.setMessage("Encuesta que permite obtener informacion sobre el estatus, participacion y progreso de las diversas " +
+                "actividades desarrolladas\nen el III Encuentro Regional de Ciencia y Tecnologia");
+        alertDialog.setPositiveButton("Continuar", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                String checkBoxResult;
+                if (dontShowAgain.isChecked()) {
+                    checkBoxResult = "checked";
+                    SharedPreferences settings = getActivity().getSharedPreferences(PREFS_NAME, 0);
+                    SharedPreferences.Editor editor = settings.edit();
+                    editor.putString("skipMessage", checkBoxResult);
+                    editor.commit();
+                    return;
+                }
+                dialog.cancel();
+            }
+        });
+        // on pressing cancel button
+       /* alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                //hand.removeCallbacks(actualizar);
+                dialog.cancel();
+            }
+        });*/
+        // Showing Alert Message
+        SharedPreferences settings = getActivity().getSharedPreferences(PREFS_NAME, 0);
+        String skipMessage = settings.getString("skipMessage","NOT checked");
+        if(!skipMessage.equals("checked")) {
+            alertDialog.show();
+        }
+    }
+    //************************************FIN DIALOGO PERSONALIZADO****************************************
 
 }

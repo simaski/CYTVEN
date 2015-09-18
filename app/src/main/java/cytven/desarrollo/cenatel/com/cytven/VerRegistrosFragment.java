@@ -24,6 +24,8 @@ public class VerRegistrosFragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_verreegistros, container, false);
+        ((MainActivity) getActivity()).setVariable(1);
+
         listView = (ListView) v.findViewById(R.id.lstRegistros);
         //Abre conexion a sqlite
         sqlite = new SQLite(getActivity());

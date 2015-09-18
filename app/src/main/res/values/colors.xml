@@ -2,6 +2,12 @@
 <resources>
     <color name="PrimaryColor">#1976D2</color>
     <color name="PrimaryDarkColor">#004e96</color>
+    <color name="PrimaryLight">#BBDEFB</color>
+    <color name="Accent">#8BC34A</color>
+    <color name="PrimaryText">#212121</color>
+    <color name="SecondaryTtext">#727272</color>
+    <color name="Icons">#FFFFFF</color>
+    <color name="Divider">#B6B6B6</color>
 
     <array name="texts_black">
         <item>@color/md_text</item>

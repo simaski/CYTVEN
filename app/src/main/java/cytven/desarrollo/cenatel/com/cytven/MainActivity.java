@@ -2,17 +2,21 @@ package cytven.desarrollo.cenatel.com.cytven;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,10 +31,15 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
 
+    //****************Integer**************************//
+    int unicode;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        unicode = 0;
 
         // Initializing Toolbar and setting it as the actionbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -77,10 +86,14 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction3.commit();
                         return true;
                     case R.id.sent_mail:
-                        Toast.makeText(getApplicationContext(),"Send Selected",Toast.LENGTH_SHORT).show();
+
                         return true;
                     case R.id.drafts:
-                        Toast.makeText(getApplicationContext(),"Drafts Selected",Toast.LENGTH_SHORT).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        AcercaDeFragment fragment2 = new AcercaDeFragment();
+                        android.support.v4.app.FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction2.replace(R.id.frame, fragment2);
+                        fragmentTransaction2.commit();
                         return true;
                     default:
                         Toast.makeText(getApplicationContext(),"Somethings Wrong",Toast.LENGTH_SHORT).show();
@@ -133,18 +146,60 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+    public void setVariable(int var) {
+        unicode = var;
     }
+
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_HOME) {
+            switch (unicode) {
+                case 0:
+                    AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+                    // Setting Dialog Title
+                    alertDialog.setTitle("Salir de la Aplicaci\u00f3n");
+                    // Setting Dialog Message
+                    alertDialog.setMessage("\u00bfQuieres salir de la aplicaci\u00f3n?");
+                    // Setting Icon to Dialog
+                    // alertDialog.setIcon(R.drawable.delete);
+                    // On pressing Settings button
+                    alertDialog.setPositiveButton("No",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.cancel();
+                                }
+                            });
+                    // on pressing cancel button
+                    alertDialog.setNegativeButton("Si",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    MainActivity.this.finish();
+                                }
+                            });
+                    // Showing Alert Message
+                    alertDialog.show();
+                    break;
+                case 1:
+                    ContentFragment fragment = new ContentFragment();
+                    android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction.replace(R.id.frame, fragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+                    return true;
+                case 2:
+                    VerRegistrosFragment fragment1 = new VerRegistrosFragment();
+                    android.support.v4.app.FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction1.replace(R.id.frame, fragment1);
+                    fragmentTransaction1.addToBackStack(null);
+                    fragmentTransaction1.commit();
+                    return true;
+            }
+
+        }
+        return true;
+    }
+
+
+
 }

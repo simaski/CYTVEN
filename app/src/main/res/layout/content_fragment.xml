@@ -40,13 +40,13 @@
                         android:layout_marginRight="5dp"
                         android:text="@string/pregunta1"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta1"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:prompt="@string/pregunta1"
                         android:layout_below="@+id/tv_pregunta1" />
 
@@ -55,9 +55,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder1"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -68,7 +68,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 1"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -91,6 +90,7 @@
                     android:id="@+id/mainHolder2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_above="@+id/placeNameHolder2"
                     android:orientation="vertical">
 
                     <TextView
@@ -105,18 +105,17 @@
                     <Spinner
                         android:id="@+id/spi_pregunta2"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
-                        android:layout_below="@+id/tv_pregunta2"/>
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/placeNameHolder2"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -127,7 +126,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 2"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -160,13 +158,13 @@
                         android:layout_marginLeft="5dp"
                         android:text="@string/pregunta3"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta3"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:layout_below="@+id/tv_pregunta3" />
 
                 </LinearLayout>
@@ -174,9 +172,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder3"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -187,7 +185,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 3"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -220,13 +217,13 @@
                         android:layout_below="@+id/spi_pregunta3"
                         android:text="@string/pregunta4"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta4"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:layout_below="@+id/tv_pregunta4" />
 
                 </LinearLayout>
@@ -234,9 +231,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder4"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -247,7 +244,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 4"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -279,13 +275,13 @@
                         android:layout_marginLeft="5dp"
                         android:text="@string/pregunta5"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta5"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:layout_below="@+id/tv_pregunta5" />
 
                 </LinearLayout>
@@ -293,9 +289,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder5"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -306,7 +302,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 5"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -339,13 +334,13 @@
                         android:layout_below="@+id/spi_pregunta5"
                         android:text="@string/pregunta6"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta6"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:layout_below="@+id/tv_pregunta6" />
 
                 </LinearLayout>
@@ -353,9 +348,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder6"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -366,7 +361,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 6"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -399,13 +393,13 @@
                         android:layout_below="@+id/placeCard6"
                         android:text="@string/pregunta7"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta7"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:layout_below="@+id/tv_pregunta7" />
 
                 </LinearLayout>
@@ -413,9 +407,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder7"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -426,7 +420,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 7"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -460,13 +453,13 @@
                         android:layout_below="@+id/spi_pregunta7"
                         android:text="@string/pregunta8"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta8"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:layout_below="@+id/tv_pregunta8" />
 
                 </LinearLayout>
@@ -474,9 +467,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder8"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -487,7 +480,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 8"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -520,13 +512,13 @@
                         android:layout_below="@+id/spi_pregunta8"
                         android:text="@string/pregunta9"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta9"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:layout_below="@+id/tv_pregunta9" />
 
                 </LinearLayout>
@@ -534,9 +526,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder9"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -547,7 +539,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 9"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -581,13 +572,13 @@
                         android:layout_below="@+id/spi_pregunta9"
                         android:text="@string/pregunta10"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta10"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:layout_below="@+id/tv_pregunta10" />
 
                 </LinearLayout>
@@ -595,9 +586,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder10"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -608,7 +599,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 10"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -641,13 +631,13 @@
                         android:layout_below="@+id/spi_pregunta10"
                         android:text="@string/pregunta11"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta11"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:layout_below="@+id/tv_pregunta11" />
 
                 </LinearLayout>
@@ -655,9 +645,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder11"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -668,7 +658,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 11"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -701,13 +690,13 @@
                         android:layout_below="@+id/spi_pregunta11"
                         android:text="@string/pregunta12"
                         android:textColor="@color/md_text"
-                        android:textSize="21sp" />
+                        android:textSize="18sp" />
 
                     <Spinner
                         android:id="@+id/spi_pregunta12"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:elevation="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_selector"
                         android:layout_below="@+id/tv_pregunta12" />
 
                 </LinearLayout>
@@ -715,9 +704,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder12"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -728,7 +717,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Pregunta 12"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -773,9 +761,9 @@
                 <LinearLayout
                     android:id="@+id/placeNameHolder13"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="bottom"
-                    android:background="#3FA1DD"
+                    android:background="@color/PrimaryColor"
                     android:orientation="horizontal">
 
                     <TextView
@@ -786,7 +774,6 @@
                         android:gravity="left"
                         android:paddingLeft="10dp"
                         android:text="Sugerencias"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>

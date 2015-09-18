@@ -4,6 +4,7 @@ package cytven.desarrollo.cenatel.com.cytven;
  * Created by San Casimiro on 08/07/2015.
  */
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ import android.view.Display;
 import android.view.WindowManager;
 
 public class SplashScreen extends Activity {
-    private final int SPLASH_TIME = 2000;
+    private final int SPLASH_TIME = 6000;
     int densidad;
     int ancho;
 
