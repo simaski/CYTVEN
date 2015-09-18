@@ -86,7 +86,11 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction3.commit();
                         return true;
                     case R.id.sent_mail:
-
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        ContactoFragment fragment5 = new ContactoFragment();
+                        android.support.v4.app.FragmentTransaction fragmentTransaction5 = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction5.replace(R.id.frame, fragment5);
+                        fragmentTransaction5.commit();
                         return true;
                     case R.id.drafts:
                         drawerLayout.closeDrawer(GravityCompat.START);
